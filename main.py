@@ -5,7 +5,7 @@
 #email = 'abc.def@mail-archive.com'  # tem q acc
 
 # verifica email
-#props serve p limitar a quantidade de parâmetros de função
+#dicionario serve p limitar a quantidade de parâmetros de função
 def veriricar_email(email):
     dicionario = {
         "prefixo": {

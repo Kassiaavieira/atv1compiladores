@@ -1,9 +1,13 @@
-def string_to_int(String):
-    return int(String)
+def string_to_int(texto):
+    for caractere_atual in list(texto):
+        if not caractere_atual.isnumeric():
+            return False
+    return True, int(texto)
 
-num1 = string_to_int(5)
-num2 = string_to_int(9)
 
-soma = num1 + num2
+# Versão 01
+print(string_to_int("abc123"))
+print(string_to_int("123"))
+print(string_to_int("010"))
 
-print(soma)
+
